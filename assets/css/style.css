@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root {
+  --primary-color: #006c80;
+  --secondary-color: #b4975a;
+  --bg-light: rgb(228, 227, 227);
+  --footer-color: #1a1a1b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #2f353e;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.3;
+}
+
+/* Scroll To Top */
+.scrollTop {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  right: 0;
+  margin: 20px 30px;
+  z-index: 19;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.scrollTop:hover {
+  background: var(--secondary-color);
+  transition: background-color 0.3s ease;
+}
+
+/* Header */
+header {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  opacity: 1;
+}
+
+/* Nav */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: var(--primary-color);
+}
+
+.logo a {
+  color: #fff;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.nav-links {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.nav-links a {
+  height: 100%;
+  color: #fff;
+  padding: 0 1rem;
+  font-size: 15px;
+}
+
+.nav-links a:hover {
+  color: var(--secondary-color);
+  transition: color 0.15s ease-in-out;
+}
+
+/* Slider section */
+#slider img {
+  display: none;
+}
+
+#slider .active {
+  display: block;
+  animation: opacity 1.1s ease;
+}
+.section-slider {
+  position: relative;
+}
+
+.section-slider .chevron-left {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.section-slider .chevron-left a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  background: var(--primary-color);
+  opacity: 0.8;
+}
+
+.section-slider .chevron-left a:hover {
+  background: var(--secondary-color);
+  transition: background-color 0.2s ease;
+}
+
+.section-slider .chevron-right {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  width: 100px;
+  height: 100%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.section-slider .chevron-right a:hover {
+  background: var(--secondary-color);
+  transition: background-color 0.2s ease;
+}
+
+.section-slider .chevron-right a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  background: var(--primary-color);
+  opacity: 0.8;
+}
+
+/* Section - 2 */
+.section-2 {
+  animation: slideFromLeft 1.8s ease;
+  padding: 2rem 0;
+}
+
+.hotel-header {
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  margin: 1.2rem 0;
+  position: relative;
+}
+
+.hotel-header h2 {
+  font-size: 2rem;
+}
+
+.hotel-header::after {
+  bottom: -15px;
+  content: '';
+  display: block;
+  height: 3px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  width: 60px;
+  background: #a29060;
+}
+
+.section-2 .section-2-content {
+  margin: 3rem 0;
+}
+
+.section-2 .section-2-content img {
+  box-shadow: 2px 1px 2px #ccc -2px -1px -2px #ccc;
+}
+
+.section-2-content p {
+  text-align: justify;
+  padding: 7px;
+}
+
+.section-2-content p .bold {
+  font-weight: bold;
+}
+
+.section-2 .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+/* Section-3 */
+.section-3 {
+  padding: 2rem 0;
+}
+.section-3 .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-3 .section-3-content {
+  margin: 3rem 0;
+}
+
+.section-3-content-items {
+  text-align: center;
+}
+
+.section-3-content-items i {
+  color: #000;
+  font-size: 2.3rem;
+  padding: 1rem 0;
+}
+
+.section-3-content-items p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.section-3-content-items a {
+  color: #2f353e;
+}
+.section-3-content-items a:hover {
+  font-weight: bold;
+}
+
+/* Section-4 */
+.section-4 {
+  padding: 2rem 0;
+}
+
+.section-4 .section-4-content {
+  margin: 3rem 0;
+}
+
+.section-4 .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.section-4 .grid-items {
+  border: 1px dashed #ccc;
+  padding: 0.4rem;
+}
+
+.section-4-content .grid-items img {
+  height: 80%;
+}
+
+.section-4-content .grid-items .book-now {
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Section-5 */
+.section-5 {
+  background-color: var(--bg-light);
+  padding-top: 1rem;
+}
+
+.section-5 .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section-5 .tab-item {
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.section-5 .tab-item:hover {
+  color: #000;
+  transform: scale(1.02, 1.02);
+  transition: transform 0.1s ease-in;
+}
+
+.section-5 p {
+  padding-top: 0.7rem;
+  font-size: 1rem;
+}
+
+.tab-border {
+  border-bottom: 4px solid var(--primary-color);
+  color: #000;
+  transform: scale(1.05, 1.05);
+}
+
+/* Tab Content */
+
+.tab-content .tab-content-item {
+  width: 70%;
+  margin: auto;
+}
+
+.show {
+  display: block !important;
+}
+
+/*  Hide content initally  */
+#tab-1-content,
+#tab-2-content {
+  display: none;
+}
+
+/* Section - 6 */
+.section-6 {
+  padding: 2rem 0;
+}
+
+.section-6 .container {
+  width: 30%;
+}
+
+.section-6 i {
+  padding: 20px;
+}
+
+.section-6 p {
+  font-weight: bold;
+}
+
+.section-6 .flex {
+  padding: 2rem 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-6 .flex .flex-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* footer */
+.footer {
+  background: var(--footer-color);
+  padding: 2rem 0;
+}
+
+.footer .container {
+  width: 80%;
+}
+
+.footer .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .grid-item {
+  text-align: center;
+}
+
+.footer .grid-item i {
+  color: #fff;
+  margin: 5px 0;
+}
+
+.footer .grid-item a {
+  display: block;
+  margin: 10px 0;
+}
+
+.footer .grid-item a:hover {
+  color: #f4f4f4;
+}
+
+/* Burger */
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+  transition: all 0.4s ease;
+}
+
+/* Utility classes */
+.btn {
+  width: 100px;
+  text-align: center;
+  background: var(--primary-color);
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: 0.83;
+  transition: opacity 0.3s ease;
+}
+
+.container {
+  margin: auto;
+  max-width: 1200px;
+}
+
+.nav-active {
+  transform: translateX(0) !important;
+}
+
+/* Keyframes */
+@keyframes navLinksFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Lines transforming to X */
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
