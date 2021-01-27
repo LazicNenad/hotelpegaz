@@ -347,7 +347,7 @@ arrayFooterLinks = [
 ];
 
 arrayFooterHrefTags = [
-  ['1', '2'],
+  ['documentation.pdf', 'sitemap.xml'],
   ['https://www.facebook.com', 'https://www.instagram.com'],
 ];
 
