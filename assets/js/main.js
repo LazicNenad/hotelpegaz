@@ -82,7 +82,7 @@ const arrayLinks = [
   ['Rooms', '#rooms'],
   ['Contact', '#contact'],
   ['Author', 'author.html'],
-  ['Docs', ''],
+  ['Docs', 'documentation.pdf'],
 ];
 
 function dinamickiMeni() {
